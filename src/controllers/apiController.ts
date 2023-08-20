@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { User } from '../models/User';
+import *  from '../services/UserService';
 
 export const ping = (req: Request, res: Response) => {
     res.json({pong: true});
@@ -9,7 +10,7 @@ export const register = async (req: Request, res: Response) => {
     if(req.body.email && req.body.password) {
         let { email, password } = req.body;
 
-        let hasUser = await User.findOne({where: { email }});
+        //let hasUser = await User.findOne({where: { email }});
         if(!hasUser) {
             let newUser = await User.create({ email, password });
 
