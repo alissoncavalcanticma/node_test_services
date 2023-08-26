@@ -7,7 +7,7 @@ https://bcrypt-generator.com/
 
 > 
 
-####  Para ...:
+####  Para Encriptar a senha foi usada a lib abaixo:
 
   - Instalando a lib bcrypt
     `npm i bcrypt`
@@ -17,4 +17,6 @@ https://bcrypt-generator.com/
 
 ####Instruções:
 
- - 
+Para utilizar o coverage com a extensão Jest Runner do vscode, deve-se incluir `-- coverage` ao fim do script de teste no package.json e a setting abaixo no arquivo settings.json do vscode:
+ - `"jestrunner.jestCommand": "npm run test",`
+Para gerar a porcentagem e highlight do coverage foi usado a extensão **coverage gutters** do vscode
