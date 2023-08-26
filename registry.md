@@ -19,10 +19,12 @@ https://bcrypt-generator.com/
 
 Para utilizar o coverage com a extensão Jest Runner do vscode com destaque de cor e sem cache, deve-se incluir `--coverage --colors-- nocache` ao fim do script de teste no package.json, conforme abaixo, e a setting no arquivo settings.json do vscode:
   ###### Script de teste do NPM
-   - `"scripts": {
+  ``` json 
+  "scripts": {
     "test": "set NODE_ENV=test& jest --runInBand --coverage --colors-- nocache",
     "start-dev": "nodemon -e ts,json src/server.ts"
-  }`
+  }
+  ```
   ###### Setting do vscode
  - `"jestrunner.jestCommand": "npm run test",`
 Para gerar a porcentagem e highlight do coverage foi usado a extensão **coverage gutters** do vscode
