@@ -1,7 +1,9 @@
 # Registry of node-passport project
 
 ###### Obs: Copy node project base of node_base_api from suporteb7web/node_base_api
-##### Foi usado o site abaixo para ...:
+##### Foi usado o site abaixo para gerar hash de senha com 10 rounds:
+
+https://bcrypt-generator.com/
 
 > 
 

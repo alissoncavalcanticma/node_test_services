@@ -3,7 +3,7 @@ import { User } from "../models/User";
 import bcrypt from 'bcrypt';
 
 export const createUser = async (email: string, password: string) => {
-    const hasUser = User.findOne({ where: { email } });
+    const hasUser = await User.findOne({ where: { email } });
     if(!hasUser){
         let passwordHash = bcrypt.hashSync(password, 10);
         const newUser = await User.create({
